@@ -88,7 +88,24 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
                     </iframe>
+					
                 </p>
+				<div class="copyright text-muted">
+						访问人数：
+						<label id="num"></label>
+					</div>
+				<script type="text/javascript">
+					if (localStorage.pagecount)
+					  {
+					  localStorage.pagecount=Number(localStorage.pagecount) +1;
+					  }
+					else
+					  {
+					  localStorage.pagecount=1;
+					  }
+					//document.write("Visits "+ localStorage.pagecount + " time(s).");
+					document.getElementById("num").innerHTML = localStorage.pagecount;
+				</script>
             </div>
         </div>
     </div>

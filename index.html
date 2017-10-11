@@ -21,19 +21,7 @@ description: "向往军旅，却投身软件"
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
     </p>
-	<span>访问人数：</span> <div id="num"></div>
-	<script type="text/javascript">
-		if (localStorage.pagecount)
-		  {
-		  localStorage.pagecount=Number(localStorage.pagecount) +1;
-		  }
-		else
-		  {
-		  localStorage.pagecount=1;
-		  }
-		//document.write("Visits "+ localStorage.pagecount + " time(s).");
-		document.getElementById("num").innerHTML = localStorage.pagecount;
-	</script>
+	
 </div>
 <hr>
 {% endfor %}
@@ -53,3 +41,5 @@ description: "向往军旅，却投身软件"
     {% endif %}
 </ul>
 {% endif %}
+
+
